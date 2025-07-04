@@ -8,9 +8,9 @@
 <body>
     <?php
         #index o12345678901234
-        echo $name = "Stefanie Hatcher<br>";
+        echo $name = "Stefanie Hatcher <br>";
         echo $length = strlen($name);
-        echo $cmp = strcmp($name, "Brian Le<br>");
+        echo $cmp = strcmp($name, "Brian Le");
         echo $index = strpos($name, "e");
         echo $first = substr($name, 9, 5);
         echo $name = strtoupper($name);

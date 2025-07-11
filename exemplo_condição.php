@@ -8,14 +8,11 @@
 <body>
     <?php
         $nota = 6.9;
-        $aprovado = ($nota >= 7);
-        $recuperação = ($nota < 7);
-        $reprovado = ($recuperação < 7);
-             if ($aprovado)
+             if ($nota >= 7)
              {
                 echo"Você está aprovado!";
              }
-             elseif($recuperação)
+             elseif($nota < 7)
              {
                 echo "Você está de recuperação";
              }

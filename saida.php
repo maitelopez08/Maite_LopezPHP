@@ -23,7 +23,8 @@
         echo 'Uma string pode usar "aspas-duplas". Isso é muito legal!';
         echo 'Ainda pode-se usar aspas simples dessa forma It\'s cool!';
     ?>
-        <adress> Maite López / Tecnico em desenvolvimento de sistemas
-        <adress>
+<address>
+    <center>Maite López / Estudante / Técnico de Desenvolvimento de Sistemas</center>
+</address>
 </body>
 </html>

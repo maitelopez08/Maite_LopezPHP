@@ -18,7 +18,8 @@
         }
     
     ?>
-        <adress> Maite López / Tecnico em desenvolvimento de sistemas
-        <adress>
+<address>
+        <center>Maite López / Estudante / Técnico de Desenvolvimento de Sistemas</center>
+</address>
 </body>
 </html>

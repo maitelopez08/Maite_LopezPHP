@@ -14,5 +14,8 @@
         }
     
     ?>
+<address>
+        <center>Maite López / Estudante / Técnico de Desenvolvimento de Sistemas</center>
+</address>
 </body>
 </html>

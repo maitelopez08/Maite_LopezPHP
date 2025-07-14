@@ -7,29 +7,46 @@
 </head>
 <body>
     <?php
-        $estados = array("PR","SC","RS","SP","RJ","MG","BA","RN","AM");
+        $estados = array("PR", "SC", "RS", "SP", "RJ", "MG", "BA", "RN", "AM");
+
         echo "ORIGINAL: ";
-        print_r ($estados);
-        echo "<hr/>STRTOLOWER: Converte uma string para minúsculas<br/>";
-        for ($i = 0; $i < count($estados); $i++){
+        print_r($estados);
+
+        echo "<hr>STRTOLOWER: Converte uma string para minúsculas<br>";
+        for ($i = 0; $i < count($estados); $i++) {
             $estados[$i] = strtolower($estados[$i]);
         }
-        echo "STRTOLOWER: "; print_r($estados);
-        echo "<hr/>SHIFT: Retira o primeiro elemento de um array<br/>";
-        $rotaciona = array_shift($estados);
-        echo "SHIFT: "; print_r($estados);
-        echo "<hr/>POP: Extrai um elemento do final do array<br/>";
-        array_pop($estados);
-        echo "POP: "; print_r($estados);
-        echo "<hr/>PUSH: Adiciona um ou mais elementos no final de um array<br/>";
-        array_push($estados, "pr");
-        echo "<hr/>REVERSE: Restorna um array com os elementos na ordem inversa<br/>";
-        $inverso = array_reverse($estados);
-        echo "REVERSE: ": print_r($inverso);
-        echo "<hr/>SORT: Ordena"
+        echo "STRTOLOWER: ";
+        print_r($estados);
 
-    
-    
+        echo "<hr>POP: Remove o último elemento do array<br>";
+        array_pop($estados);
+        echo "POP: ";
+        print_r($estados);
+
+        echo "<hr>PUSH: Adiciona um elemento ao final do array<br>";
+        array_push($estados, "ce");
+        echo "PUSH: ";
+        print_r($estados);
+
+        echo "<hr>REVERSE: Inverte a ordem dos elementos do array<br>";
+        $inverso = array_reverse($estados);
+        echo "REVERSE: ";
+        print_r($inverso);
+
+        echo "<hr>SORT: Ordena os elementos de um array em ordem crescente<br>";
+        sort($estados);
+        echo "SORT: ";
+        print_r($estados);
+
+        echo "<hr>SLICE: Extrai uma parte de um array<br>";
+        $dividir = array_slice($estados, 1, 2);
+        echo "SLICE: ";
+        print_r($dividir);
+        echo "<br>";
     ?>
+<address>
+        <center>Maite López / Estudante / Técnico de Desenvolvimento de Sistemas</center>
+</address>
 </body>
 </html>

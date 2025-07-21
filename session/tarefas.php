@@ -8,30 +8,30 @@ session_start();
 
     if (isset($_GET['descricao'])) {
         $tarefa['descricao'] = $_GET['descricao'];
-    } else {
-        $tarefa['descricao'] = '';
-    }
+        } else {
+            $tarefa['descricao'] = '';
+            }
 
     if (isset($_GET['prazo'])) {
         $tarefa['prazo'] = $_GET['prazo'];
-    } else {
-        $tarefa['prazo'] = '';
-    }
+        } else {
+            $tarefa['prazo'] = '';
+            }
 
-    $tarefa['prioridade'] = $_GET['prioridade'];
+        $tarefa['prioridade'] = $_GET['prioridade'];
 
     if (isset($_GET['concluida'])) {
         $tarefa['concluida'] = $_GET['concluida'];
-    } else {
-    $tarefa['concluida'] = '';
-    }
+        } else {
+            $tarefa['concluida'] = '';
+            }
     $_SESSION['lista_tarefas'] [] = $tarefa;
 }
 
     if (array_key_exists('lista_tarefas', $_SESSION)) {
         $lista_tarefas = $_SESSION['lista_tarefas'];
-    } else {
-        $lista_tarefas = [];
+        } else {
+            $lista_tarefas = [];
     }
-include "template.php"
+    include "template.php";
 ?>

@@ -24,10 +24,7 @@
                 Prazo (Opcional):
                 <input type="text" name="prazo" />
             </label>
-
-            <input type="submit" value="Cadastrar" />
-
-        </fieldset>
+       
 
         <fieldset>
         <legend>Pioridade:</legend>
@@ -36,15 +33,16 @@
                     Baixa
                 <input type="radio" name="prioridade" value="media"/>
                     Média
-            <input type="radio" name="prioridade" value="alta"/>
-                Alta
+                <input type="radio" name="prioridade" value="alta"/>
+                    Alta
             </label>
+            </fieldset>
+            <lable>
+                Tarefa Concluída:
+                <input type="checkbox" name="concluida" value="sim"/>
+            </lable>
+                <input type="submit" value="cadastrar"/>
         </fieldset>
-        <lable>
-            Tarefa Concluída:
-            <input type="checkbox" name="concluida" value="sim"/>
-        </lable>
-            <input type="submit" value="cadastrar"/>
     </form>
 
     <table>
@@ -56,9 +54,13 @@
             <th>Concluída</th>
         </tr>
         <?php foreach ($lista_tarefas as $tarefa): ?>
-        <tr>
-            <td><?php echo $tarefa; ?> </td>
-        </tr>
+            <tr>
+                <td><?php echo $tarefa['nome']; ?> </td>
+                <td><?php echo $tarefa['descricao']; ?> </td>
+                <td><?php echo $tarefa['prazo']; ?> </td>
+                <td><?php echo $tarefa['prioridade']; ?> </td>
+                <td><?php echo $tarefa['concluida']; ?> </td>
+            </tr>
         <?php endforeach; ?>
     </table>
 </body>

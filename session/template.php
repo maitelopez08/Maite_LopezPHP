@@ -63,5 +63,12 @@
             </tr>
         <?php endforeach; ?>
     </table>
+
+    <br><br><br>
+    <address>
+        <center>
+                Maite López / Estudante / Técnico em Desenvolvimento de Sistemas
+        </center>
+    </address>
 </body>
 </html>

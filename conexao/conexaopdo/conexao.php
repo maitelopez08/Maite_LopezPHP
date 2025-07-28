@@ -1,6 +1,6 @@
 <?php
 function conectarBanco(){
-    $dsn = "mysql:host=localhost;dibname=empresa;charset=utf8";
+    $dsn = "mysql:host=localhost;dbname=empresa;charset=utf8";
     $usuario = "root";
     $senha = "";
     try{

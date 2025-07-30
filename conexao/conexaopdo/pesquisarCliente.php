@@ -3,7 +3,7 @@ require_once 'conexao.php';
 
 $conexao = conectarBanco();
 
-$busca = $_get['busca']??'';
+$busca = $_GET['busca'] ?? '';
 
 if(!$busca){
     ?>
@@ -26,7 +26,7 @@ if(is_numeric($busca)){
         $stmt->bindParam(":nome", $buscaNome, PDO::PARAM_STR);
 }
 $stmt->execute();
-$clientes = $stmt->fetchAll()
+$clientes = $stmt->fetchAll();
 if(!$clientes){
     die("Erro: Nenhum cliente encontrado.");
 }
@@ -48,7 +48,6 @@ if(!$clientes){
             <td><?=htmlspecialchars($cliente['endereco'])?></td>
             <td><?=htmlspecialchars($cliente['telefone'])?></td>
             <td><?=htmlspecialchars($cliente['email'])?></td>
-            <td><?=htmlspecialchars($cliente['id_cliente'])?></td>
             <td>
             <a href="atualizarCliente.php?id=<?=$cliente['id_cliente']?>">Editar</a>
     </td>

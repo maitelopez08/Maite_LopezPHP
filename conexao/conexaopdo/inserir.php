@@ -4,11 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro de Cliente</title>
-
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- Seus estilos -->
+
    <link rel="stylesheet" href="CSS/stylemenu.css">
    <link rel="stylesheet" href="CSS/styleinserir.css">
   
@@ -16,14 +13,8 @@
 
 <body class="bg-light">
 
-  <!-- MENU FORA DA QUADRO-BRANCO -->
   <?php include 'menu.php'; ?>
 
-
-
-
-  
-  <!-- FORMULÁRIO CENTRALIZADO -->
   <div class="container mt-5">
     <div class="quadro-branco">
       <h2 class="text-center mb-4">Cadastro de Cliente</h2>

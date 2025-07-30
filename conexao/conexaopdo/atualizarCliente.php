@@ -35,7 +35,8 @@ if($idCliente && is_numeric($idCliente)){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atualizar Cliente</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/styleatualizar.css">
+    <link rel="stylesheet" href="CSS/stylemenu.css">
     <script>
         function habilitarEdicao(campo){
             document.getElementById(campo).removeAttribute("readonly");
@@ -43,6 +44,7 @@ if($idCliente && is_numeric($idCliente)){
     </script>
 </head>
 <body>
+    <?php include 'menu.php'; ?>
     <h2>Atualizar Cliente</h2>
 
     <!--Se houver erro, exibe a mensagem e o campo de busca-->

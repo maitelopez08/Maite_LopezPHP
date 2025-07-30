@@ -1,7 +1,7 @@
 <header>
   <ul class="meu-menu">
     <li class="dropdown">
-      <a href="javascript:void(0);" class="dropbtn">Cadastrar - Maite</a>
+      <a href="index.php" class="dropbtn">Home</a>
       <div class="dropdown-content">
         <a href="../conexaopdo/inserir.php">Inserir Cliente</a>     
         <a href="../conexaopdo/listarClientes.php">Listar Cliente</a>

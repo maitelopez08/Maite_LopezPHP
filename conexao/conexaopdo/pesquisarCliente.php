@@ -42,7 +42,7 @@ if (!$busca) {
     exit;
 }
 
-// Se chegou até aqui, é porque já buscou algo:
+
 if (is_numeric($busca)) {
     $stmt = $conexao->prepare("SELECT id_cliente, nome, endereco, telefone, email FROM cliente WHERE id_cliente = :id");
     $stmt->bindParam(":id", $busca, PDO::PARAM_INT);

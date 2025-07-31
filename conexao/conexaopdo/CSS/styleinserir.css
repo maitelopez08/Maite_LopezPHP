@@ -12,7 +12,7 @@ body {
   margin: 70px auto;
 }
 
-.formulario-personalizado {
+.formulario{
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -21,8 +21,8 @@ body {
 h2 {
   color: #424141;
   font-weight: 600;
+  text-align: center;
 }
-
 label {
   color: #444;
   font-size: 15px;

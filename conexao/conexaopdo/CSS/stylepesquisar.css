@@ -3,35 +3,17 @@ body {
   font-family: Sans-serif, Verdana;
 }
 
-/* Estrutura principal do formulário */
-.quadro-branco {
-  background-color: #ffffff;
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  max-width: 500px;
-  margin: 70px auto;
-}
-
-/* Formulário */
-.formulario {
-  margin: 0 auto;
-}
-
-/* Título */
 h2 {
   color: #424141;
   font-weight: 600;
   text-align: center;
 }
 
-/* Labels dos inputs */
 label {
   color: #444;
   font-size: 15px;
 }
 
-/* Botão roxo */
 .btn-primary {
   background-color: #6f42c1;
   border-color: #6f42c1;
@@ -42,3 +24,24 @@ label {
   background-color: #5936a8;
   border-color: #5936a8;
 }
+
+.formulario {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.quadro-branco {
+  max-width: 500px;
+}
+
+.quadro-grande {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  max-width: 900px; /* largura maior */
+  margin: 70px auto;
+
+}
+

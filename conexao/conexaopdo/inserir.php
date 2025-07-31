@@ -19,7 +19,7 @@
     <div class="quadro-branco">
       <h2 class="text-center mb-4">Cadastro de Cliente</h2>
 
-      <form action="processarinsercao.php" method="POST" class="formulario-personalizado">
+      <form action="processarinsercao.php" method="POST" class="formulario">
         <div class="mb-3">
           <label for="nome" class="form-label">Nome:</label>
           <input type="text" class="form-control" id="nome" name="nome" required>
@@ -46,5 +46,10 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <address>
+  <center>
+        Maite López | Estudante | Técnico em Desenvolvimento de Sistemas
+  </center>
+    </address>
 </body>
 </html>

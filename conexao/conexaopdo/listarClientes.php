@@ -22,7 +22,8 @@ $clientes = $stmt->fetchAll();
 
 <body>
   <?php include 'menu.php'; ?>
-
+<div class="container mt-5">
+    <div class="quadro-grande">
   <div class="container">
     <h2>Lista de Clientes</h2>
 
@@ -51,8 +52,13 @@ $clientes = $stmt->fetchAll();
       </table>
     </div>
   </div>
+</div>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <address>
+  <center>
+        Maite López | Estudante | Técnico em Desenvolvimento de Sistemas
+  </center>
+    </address>
 </body>
 </html>

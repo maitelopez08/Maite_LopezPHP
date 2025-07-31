@@ -3,10 +3,12 @@ require_once 'conexao.php';
 
 $conexao = conectarBanco();
 
-$idCliente = $_GET['id'] ?? null;
+//Obtendo o ID via GET
+$idCliente = $_GET['id']?? null;
 $cliente = null;
 $msgErro = "";
 
+//Função local para buscar cliente por ID
 function buscarClientePorId($idCliente, $conexao) {
     $stmt = $conexao->prepare("SELECT id_cliente, nome, endereco, telefone, email FROM cliente WHERE id_cliente = :id");
     $stmt->bindParam(":id", $idCliente, PDO::PARAM_INT);
@@ -14,15 +16,18 @@ function buscarClientePorId($idCliente, $conexao) {
     return $stmt->fetch();
 }
 
-if ($idCliente && is_numeric($idCliente)) {
+//Se um ID foi enviado, busca o cliente no bano
+if($idCliente && is_numeric($idCliente)){
     $cliente = buscarClientePorId($idCliente, $conexao);
-    if (!$cliente) {
+
+    if(!$cliente){
         $msgErro = "Erro: Cliente não encontrado.";
     }
-} else {
+}else{
     $msgErro = "Digite o ID do cliente para buscar os dados.";
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -31,8 +36,14 @@ if ($idCliente && is_numeric($idCliente)) {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Atualizar Cliente</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
   <link rel="stylesheet" href="CSS/stylemenu.css" />
-  <link rel="stylesheet" href="CSS/styleatualizar.css" />
+  <link rel="stylesheet" href="CSS/stylepesquisar.css" />
+    <script>
+        function habilitarEdicao(campo){
+            document.getElementById(campo).removeAttribute("readonly");
+        }
+    </script>
 </head>
 <body>
 
@@ -43,7 +54,7 @@ if ($idCliente && is_numeric($idCliente)) {
 
     <?php if ($msgErro): ?>
       <p class="text-danger"><?= htmlspecialchars($msgErro) ?></p>
-      <form action="atualizarCliente.php" method="GET" class="mb-3 formulario-personalizado">
+      <form action="atualizarCliente.php" method="GET" class="mb-3 formulario">
         <div class="mb-3">
           <label for="id" class="form-label">ID do Cliente:</label>
           <input type="number" id="id" name="id" class="form-control" required>
@@ -51,7 +62,7 @@ if ($idCliente && is_numeric($idCliente)) {
         <button type="submit" class="btn btn-primary">Buscar</button>
       </form>
     <?php else: ?>
-      <form action="processarAtualizacao.php" method="POST" class="formulario-personalizado">
+      <form action="processarAtualizacao.php" method="POST" class="formulario">
         <input type="hidden" name="id_cliente" value="<?= htmlspecialchars($cliente['id_cliente']) ?>">
 
         <div class="mb-3">
@@ -80,5 +91,10 @@ if ($idCliente && is_numeric($idCliente)) {
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <address>
+  <center>
+        Maite López | Estudante | Técnico em Desenvolvimento de Sistemas
+  </center>
+    </address>
 </body>
 </html>

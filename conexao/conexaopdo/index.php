@@ -12,7 +12,12 @@
 </head>
 <body>
     <?php include 'menu.php'; ?>
+    <h2>Home</h2>
     
-    
+  <address>
+  <center>
+        Maite López | Estudante | Técnico em Desenvolvimento de Sistemas
+  </center>
+    </address>    
 </body>
 </html>

@@ -3,3 +3,8 @@ h2 {
   font-weight: 600;
   text-align: center;
 }
+
+body {
+  background-color: #d9dbdf;
+  font-family: Sans-serif, Verdana;
+}

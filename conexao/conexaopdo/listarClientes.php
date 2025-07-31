@@ -15,9 +15,9 @@ $clientes = $stmt->fetchAll();
   <title>Lista de Clientes</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="CSS/stylelistar.css">
   <link rel="stylesheet" href="CSS/stylemenu.css">
+  <link rel="stylesheet" href="CSS/stylelistar.css">
+
 </head>
 
 <body>

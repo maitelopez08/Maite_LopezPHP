@@ -30,13 +30,9 @@ if ($idCliente && is_numeric($idCliente)) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Atualizar Cliente</title>
-
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Seus estilos externos -->
   <link rel="stylesheet" href="CSS/stylemenu.css" />
-  <link rel="stylesheet" href="CSS/styleinserir.css" />
+  <link rel="stylesheet" href="CSS/styleatualizar.css" />
 </head>
 <body>
 

@@ -38,7 +38,7 @@ if($idCliente && is_numeric($idCliente)){
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="CSS/stylemenu.css" />
-  <link rel="stylesheet" href="CSS/stylepesquisar.css" />
+  <link rel="stylesheet" href="CSS/styleatualizar.css" />
     <script>
         function habilitarEdicao(campo){
             document.getElementById(campo).removeAttribute("readonly");

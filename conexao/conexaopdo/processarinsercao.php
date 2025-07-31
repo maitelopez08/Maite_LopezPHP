@@ -9,6 +9,11 @@
 </head>
 <body>
     <?php include 'menu.php'; ?>
+    <address>
+  <center>
+        Maite López | Estudante | Técnico em Desenvolvimento de Sistemas
+  </center>
+    </address>
 </body>
 </html>
 

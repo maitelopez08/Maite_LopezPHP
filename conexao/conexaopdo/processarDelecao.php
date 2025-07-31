@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processar Deleção</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/stylemenu.css">
+</head>
+<body>
+    <?php include 'menu.php'; ?>
+</body>
+</html>
+
+
+
+
+
 <?php
 
 require_once 'conexao.php';
@@ -17,10 +35,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     try {
         $stmt->execute();
-        echo "Cliente excluído com sucesso!";
+        echo '<div class="d-flex justify-content-center mt-3">
+                <div class="alert alert-success text-center w-50">
+                    Cliente excluído com sucesso!
+                </div>
+            </div>';
     } catch (PDOException $e) {
         error_log("Erro ao excluir cliente: ".$e->getMessage());
-        echo "Erro ao excluir cliente.";
+        echo '<div class="d-flex justify-content-center mt-3">
+                  <div class="alert alert-danger text-center w-50">
+                    Erro ao excluir cliente.
+                  </div>
+            </div>';
     }
 }
 ?>
+
+

@@ -13,7 +13,7 @@ if($conexao->connect_error){
     die("Erro de conexão:" . $conexao->connect_error);
 }
 
-//Capura os dados do formulário (nom e de usuário)
+//Capura os dados do formulário (nome de usuário)
 $nome = $_POST["nome"];
 
 //Executa a consulta SEM proteção contra SQL Injection

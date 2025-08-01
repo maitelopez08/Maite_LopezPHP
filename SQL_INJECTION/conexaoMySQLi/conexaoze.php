@@ -20,14 +20,14 @@ mysqli_set_charset($conn, "utf8mb4");
 echo "Conexão bem-sucedida!";
 
 //Consulta SQL para obter clientes
-$sql = "SELECT id_cliente, nome email FROM cliente";
+$sql = "SELECT id_cliente, nome, email FROM cliente";
 $result = mysqli_query($conn, $sql);
 
 //Verifica se há resultados na consulta
 if(mysqli_num_rows($result) > 0){
 //Itera sobre os resultados e exibe os dados
     while($linha = mysqli_fetch_assoc($result)){
-        echo "ID: ".$linha["id_cliente"]."-Nome:". $linha["nome"]."-Email" . $linha["email"]."<br/>";}
+        echo "ID: ".$linha["id_cliente"]." -Nome: ". $linha["nome"]." -Email: " . $linha["email"]."<br/>";}
 }else{
     echo "Nenhum resultado encontrado.";}
 

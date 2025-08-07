@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
         <h1>Cadastro</h1>
         <h2>Funcionario</h2>
         <!-- FORMULARIO PARA CADASTRAR UM FORMULARIO-->
-    <form action="salvar_funcionario.php" method="POST" enctype="multipart/form-data">
+        <form action="salvar_funcionario.php" method="POST" enctype="multipart/form-data">
         
         <!-- CAMPO PARA INSERIR O NOME DO FUNCIONARIO -->
         <label form="nome">Nome:</label>

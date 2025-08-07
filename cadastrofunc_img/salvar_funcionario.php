@@ -15,7 +15,7 @@ function redimensionarImagem($imagem,$largura,$altura){
 
     //COPIA E REDIMENSIONA A UMA IMAGEM ORIGINAL PARA A NOVA
     //imagecopyresampled() COPIA COM REDIMENSIONAMENTO E SUAVIZAÇÃO
-    imagecopyresampled($novaImagem,$imagemOriginal, 0, 0, 0, 0, $largura, $altura, $larguraOriginal, $alturaOriginal)
+    imagecopyresampled($novaImagem,$imagemOriginal, 0, 0, 0, 0, $largura, $altura, $larguraOriginal, $alturaOriginal);
 
     //INICIA UM BUFFER PARA GUARDAR A IMAGEM COM O TEXTO BINARIO
     //ob_start() INICIA O "output buffering" GUARDANDO A SAIDA
@@ -38,7 +38,7 @@ function redimensionarImagem($imagem,$largura,$altura){
 
     //CONFIGURAÇÃO DO BANCO DE DADOS
     $host = 'localhost';
-    $dbname = 'bd_imagem';
+    $dbname = 'bd_imagens';
     $username = 'root';
     $password = '';
 
@@ -47,7 +47,7 @@ function redimensionarImagem($imagem,$largura,$altura){
         $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username,$password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //DEFINE QUE ERROS VAO LANÇAR EXCEÇÕES
 
-        if($_SERVER['REQUEST_METHOD'] == 'POST' %% isset($_FILES['foto'])){
+        if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['foto'])){
             if($_FILES['foto']['error'] == 0){
                 $nome = $_POST['nome']; //PEGA O NOME DO FUNCIONARIO
                 $telefone = $_POST['telefone']; //PEGA O TELEFONE DO FUNCIONARIO
@@ -83,3 +83,17 @@ function redimensionarImagem($imagem,$largura,$altura){
     }
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Imagens</title>
+</head>
+<body>
+    <h1>Lista de imagens</h1>
+
+    <a href="consulta_funcionario.php">Listar Funcionarios</a>
+</body>
+</html>

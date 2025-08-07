@@ -60,8 +60,8 @@
     <p>Nome:<?=htmlspecialchars($funcionario['nome'])?></p>
     <p>Telefone:<?=htmlspecialchars($funcionario['telefone'])?></p>
     <p>Foto:</p>
-        <img src="data:<?=$funcionario['tipo_foto']?>;base64_encode
-            ($funcionario['foto'])?>" alt="Foto do Funcionario">
+    <img src="data:<?= $funcionario['tipo_foto'] ?>;base64,<?= base64_encode($funcionario['foto']) ?>" alt="Foto do Funcionário">
+
         
     <!-- FORMULARIO PARA EXCLUIR FUNCIONARIO -->
     <form method="POST">

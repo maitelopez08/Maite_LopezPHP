@@ -47,7 +47,7 @@
         <?php foreach($funcionarios as $funcionario): ?>
             <li>
                 <!-- A LINHA ABAIXO EXIBE O LINK PARA VISUALIZAR OS DETALHES  DO FUNCIONARIO COM BASE NO id -->
-                <a href="visualizar_funcionario.php?id=<?$funcionario['id']?>">
+                <a href="visualizar_funcionario.php?id=<?=$funcionario['id']?>">
                 <!-- A LINHA ABAIXO EXIBE O NOME DO FUNCIONARIO -->
                     <?=htmlspecialchars($funcionario['nome'])?>
                 </a>

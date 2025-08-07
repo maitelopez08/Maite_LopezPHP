@@ -40,7 +40,7 @@
                 $stmt_excluir = $pdo->prepare($sql_excluir);
 
                 //ASSOCIA O VALOR id AO PARAMETRO :id NA QUERY GARANTINDO QUE SERA TRATADO COMO UM NUMERO 
-                $stmt_excluir = bindParam(':id',$excluir_id, PDO::PARAM_INT);
+                $stmt_excluir->bindParam(':id',$excluir_id, PDO::PARAM_INT);
 
                 //EXECUTA A QUERY EXCLUINDO O FUNCIONARIO DO BD
                 $stmt_excluir->execute();
@@ -57,10 +57,10 @@
 </head>
 <body>
     <h1>Dados do Funcionario</h1>
-    <p>Nome:<?htmlspecialchars($funcionario['nome'])?></p>
-    <p>Telefone:<?htmlspecialchars($funcionario['telefone'])?></p>
+    <p>Nome:<?=htmlspecialchars($funcionario['nome'])?></p>
+    <p>Telefone:<?=htmlspecialchars($funcionario['telefone'])?></p>
     <p>Foto:</p>
-        <img src="data:<?$funcionario['tipo_foto']?>;base64_encode
+        <img src="data:<?=$funcionario['tipo_foto']?>;base64_encode
             ($funcionario['foto'])?>" alt="Foto do Funcionario">
         
     <!-- FORMULARIO PARA EXCLUIR FUNCIONARIO -->

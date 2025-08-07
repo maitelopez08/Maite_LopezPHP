@@ -27,5 +27,9 @@
 
         <button type="submit">Cadastrar</button>
     </div>
+    <br><br>
+  <address>
+    <center>Maite López / Estudante / Técnico Desenvolvimento de Sistemas</center>
+  </address>
 </body>
 </html>

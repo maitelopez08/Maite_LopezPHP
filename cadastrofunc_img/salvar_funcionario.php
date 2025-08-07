@@ -95,5 +95,9 @@ function redimensionarImagem($imagem,$largura,$altura){
     <h1>Lista de imagens</h1>
 
     <a href="consulta_funcionario.php">Listar Funcionarios</a>
+    <br><br>
+  <address>
+    <center>Maite López / Estudante / Técnico Desenvolvimento de Sistemas</center>
+  </address>
 </body>
 </html>

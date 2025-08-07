@@ -59,5 +59,9 @@
             </li>
         <?php endforeach; ?>
     </ul>
+    <br><br>
+  <address>
+    <center>Maite López / Estudante / Técnico Desenvolvimento de Sistemas</center>
+  </address>
 </body>
 </html>

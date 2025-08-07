@@ -68,6 +68,10 @@
         <input type="hidden" name="excluir_id" value="<?=$id ?>">
         <button type="submit">Excluir Funcionario </button>
     </form>
+    <br><br>
+  <address>
+    <center>Maite López / Estudante / Técnico Desenvolvimento de Sistemas</center>
+  </address>
 </body>
 </html>
 <?php
